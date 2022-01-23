@@ -1,9 +1,9 @@
 body {
-    background-image: https://unsplash.com/photos/V63oM8OPJSo;
+    background-image: "background.jpg";
     padding-top: 100px;
 }
 
-h1, h2 {
+h1, h2, a {
     text-align: center;
 }
 
