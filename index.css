@@ -8,8 +8,9 @@ h1, h2, a {
     text-align: center;
 }
 #insta-icon {
-    width: 100px;
-    display:inline-block;
+    width: 50px;
+    display: block;
+    margin: top 4000px;;
     margin-left: auto;
     margin-right: auto;
 }
