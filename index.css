@@ -1,87 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-
 body {
-     
-        /* background: url(./images/background\ image.jpg) no-repeat center;  */
-        /* background-color: white;
-        background-size: cover;
-        height: 5px;
-        background-position-y: 0vmin; */
-        
     
-    padding-top: 10px;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-
-#music-icon {
-    width: 110px;
-    display: block;
-    filter: invert(1);
-}
-
-#robot-icon {
-    width: 115px;
-    display: block;
-    filter: invert(1);
-
-}
-
-#camera-icon {
-    width: 115px;
-    display: block;
-    filter: invert(1);
-}
-
-* {
-    margin: 0;
-    padding:0;
-    z-index: 10;
-}
-
-.showcase {
-    
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    color: #fff;
-    z-index: 2;
+    background-color: black;
 }
 
 .showcase header {
-    position:absolute;
-    top: 0;
-    width: 100%;
-    padding: 50px;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
     color: white;
     font-family: 'Bungee Inline', cursive;
-    
 }
 
-.showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 1;
-}
 
-.overlay {
+/* .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -89,37 +19,58 @@ h1, h2 {
     height: 100%;
     background: rgba(0, 0, 0, 0.05);
     mix-blend-mode: overlay;
+} */
+
+
+
+#musicnote {
+    width: 150px;
+    filter: invert(1);
 }
+
+#gamecontroller {
+    width: 170px;
+    filter: invert(1);
+}
+
+#camera {
+    width: 190px;
+    filter: invert(1);
+}
+
+#github {
+    width: 180px;
+
+}
+
+ #instagram {
+     width: 180px;
+ }
+
+ #twitter {
+     width: 180px;
+ }
 
 .icons {
-    position: absolute;
-    align-items: center;
-    display: flex;
-    z-index: 0;
-    justify-content: center;
-}
-
-.icons li {
-    list-style: none;
-}
-
-.social {
-    position: absolute;
-    bottom: -150px;
-    z-index: 100;
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 140px;
+    margin-top: 100px;
 }
 
-.social li {
-    list-style: none;
-}
+ .socials {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 200px;
+     z-index: 100;
+ }
 
-.social li a {
-    display: inline-block;
-    filter: invert(1);
-    transform: scale(.05);
-}
-
-
+/* .showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+} */
