@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-body {
+
+    body {
     
     background-color: black;
 }
@@ -75,7 +76,3 @@ body {
     opacity: 1;
 } */
 
-@media only screen and (max-device-width: 1024px) {
-    .showcase web page box {
-    width: 100%; (full width)
-    }
