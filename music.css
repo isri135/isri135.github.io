@@ -19,14 +19,12 @@ h1 {
 .piano {
     color: rgb(147, 168, 192);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: cyan 5px;
     float: left;
 }
 
 .guitar {
     color: rgb(147, 168, 192);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: cyan 5px;
     float: right;
 
 }
