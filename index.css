@@ -74,3 +74,8 @@ body {
     object-fit: cover;
     opacity: 1;
 } */
+
+@media only screen and (max-device-width: 1024px) {
+    .showcase web page box {
+    width: 100%; (full width)
+    }
