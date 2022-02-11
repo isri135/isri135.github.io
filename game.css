@@ -1,8 +1,30 @@
 body {
-    background-color: blue;
+    background-color: rgb(64, 64, 182);
 }
 
+.showcase header {
+    color: aliceblue;
+}
 
 #gamecontroller {
     width: 100px;
+    filter: invert(1);
+
+}
+
+.page {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#spaceinvader {
+    width: 100px;
+    filter: invert(1);
+}
+.game-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
