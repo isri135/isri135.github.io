@@ -83,37 +83,37 @@
     
     }
     #musicnote {
-        width: 70px;
+        width: 60px;
         filter: invert(1);
     }
     
     #gamecontroller {
-        width: 85px;
+        width: 75px;
         filter: invert(1);
     }
     
     #camera {
-        width: 85px;
+        width: 75px;
         filter: invert(1);
     }
 
     #github {
-        width: 130px;
+        width: 120px;
     
     }
     
      #instagram {
-         width: 130px;
+         width: 120px;
      }
     
      #twitter {
-         width: 130px;
+         width: 120px;
      }
      .icons {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 80px;
+        gap: 75px;
         margin-top: 80px;
     }
     
@@ -149,22 +149,22 @@
         }
     
         #github {
-            width: 130px;
+            width: 120px;
         
         }
         
          #instagram {
-             width: 130px;
+             width: 120px;
          }
         
          #twitter {
-             width: 130px;
+             width: 120px;
          }
          .icons {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 80px;
+            gap: 75px;
             margin-top: 80px;
         }
         
