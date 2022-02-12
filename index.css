@@ -75,4 +75,104 @@
     object-fit: cover;
     opacity: 1;
 } */
+@media screen and (max-width: 800px) {
+    body {
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    
+    }
+    #musicnote {
+        width: 75px;
+        filter: invert(1);
+    }
+    
+    #gamecontroller {
+        width: 90px;
+        filter: invert(1);
+    }
+    
+    #camera {
+        width: 90px;
+        filter: invert(1);
+    }
 
+    #github {
+        width: 140px;
+    
+    }
+    
+     #instagram {
+         width: 140px;
+     }
+    
+     #twitter {
+         width: 140px;
+     }
+     .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 80px;
+    }
+    
+     .socials {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 200px;
+         z-index: 100;
+     }
+    }
+
+@media screen and (max-width: 550px) {
+    body {
+        background-color: black;
+        color: white;
+        display: inline-flex;
+        
+        }
+        #musicnote {
+            width: 75px;
+            filter: invert(1);
+        }
+        
+        #gamecontroller {
+            width: 90px;
+            filter: invert(1);
+        }
+        
+        #camera {
+            width: 90px;
+            filter: invert(1);
+        }
+    
+        #github {
+            width: 140px;
+        
+        }
+        
+         #instagram {
+             width: 140px;
+         }
+        
+         #twitter {
+             width: 140px;
+         }
+         .icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            margin-top: 80px;
+        }
+        
+         .socials {
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-bottom: 200px;
+             z-index: 100;
+         }
+}
