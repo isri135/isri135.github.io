@@ -83,17 +83,17 @@
     
     }
     #musicnote {
-        width: 75px;
+        width: 80px;
         filter: invert(1);
     }
     
     #gamecontroller {
-        width: 90px;
+        width: 95px;
         filter: invert(1);
     }
     
     #camera {
-        width: 90px;
+        width: 95px;
         filter: invert(1);
     }
 
