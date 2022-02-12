@@ -83,37 +83,37 @@
     
     }
     #musicnote {
-        width: 80px;
+        width: 70px;
         filter: invert(1);
     }
     
     #gamecontroller {
-        width: 95px;
+        width: 85px;
         filter: invert(1);
     }
     
     #camera {
-        width: 95px;
+        width: 85px;
         filter: invert(1);
     }
 
     #github {
-        width: 140px;
+        width: 130px;
     
     }
     
      #instagram {
-         width: 140px;
+         width: 130px;
      }
     
      #twitter {
-         width: 140px;
+         width: 130px;
      }
      .icons {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 100px;
+        gap: 80px;
         margin-top: 80px;
     }
     
@@ -164,7 +164,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 100px;
+            gap: 80px;
             margin-top: 80px;
         }
         
