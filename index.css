@@ -22,7 +22,10 @@
     mix-blend-mode: overlay;
 } */
 
+#profile-pic {
+    width: 150px;
 
+}
 
 #musicnote {
     width: 150px;
@@ -52,6 +55,12 @@
      width: 180px;
  }
 
+ .profile-pic {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
 .icons {
     display: flex;
     justify-content: center;
@@ -75,13 +84,20 @@
     object-fit: cover;
     opacity: 1;
 } */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     body {
     background-color: black;
     color: white;
     display: inline-flex;
+    font-size: x-small;
     
     }
+
+    #profile-pic {
+        width: 110px;
+    
+    }
+
     #musicnote {
         width: 60px;
         filter: invert(1);
@@ -109,6 +125,13 @@
      #twitter {
          width: 120px;
      }
+
+     .profile-pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
      .icons {
         display: flex;
         align-items: center;
@@ -131,8 +154,14 @@
         background-color: black;
         color: white;
         display: inline-flex;
+        font-size: x-small;
         
         }
+
+        #profile-pic {
+            width: 100px;
+        }
+
         #musicnote {
             width: 65px;
             filter: invert(1);
@@ -160,6 +189,13 @@
          #twitter {
              width: 120px;
          }
+
+         .profile-pic {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
          .icons {
             display: flex;
             align-items: center;
