@@ -93,6 +93,7 @@
     
     }
 
+
     .showcase header {
         text-align: center;
         color: white;
@@ -101,17 +102,17 @@
     }
 
     #profile-pic {
-        width: 130px;
+        width: 170px;
     
     }
 
     #musicnote {
-        width: 108px;
+        width: 135px;
         filter: invert(1);
     }
     
     #gamecontroller {
-        width: 115px;
+        width: 145px;
         filter: invert(1);
     }
     
@@ -121,16 +122,16 @@
     } */
 
     #github {
-        width: 150px;
+        width: 160px;
     
     }
     
      #instagram {
-         width: 150px;
+         width: 160px;
      }
     
      #twitter {
-         width: 150px;
+         width: 160px;
      }
 
      .profile-pic {
@@ -164,6 +165,7 @@
         font-size: x-small;
         
         }
+
 
         .showcase header {
             text-align: center;
