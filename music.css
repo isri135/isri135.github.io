@@ -8,36 +8,36 @@ body {
 
 .showcase header {
     text-align: center;
-    color: white;
+    color: whitesmoke;
     font-family: 'Bungee Inline', cursive;
+    filter: drop-shadow(-5px -5px 3px rgba(0, 0, 0, 0.3))
+            drop-shadow( 10px 10px 10px rgba(0, 0, 0, 0.2))
+            drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.2));
 }
 h1 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: xxx-large;
 
 }
 
 .piano {
-    color: white;
+    color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     float: left;
+    filter: drop-shadow(-5px -5px 3px rgba(0, 0, 0, 0.3))
+            drop-shadow( 10px 10px 10px rgba(0, 0, 0, 0.2))
+            drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.2));
 }
 
 .guitar {
-    color: white;
+    color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     float: right;
+    filter: drop-shadow(-5px -5px 3px rgba(0, 0, 0, 0.3))
+            drop-shadow( 10px 10px 10px rgba(0, 0, 0, 0.2))
+            drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.2));
 
 }
-
-/* .band {
-    position: relative;
- 
-    color: rgb(147, 168, 192);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    justify-content: center;
-
-} */
 
 @media screen and (max-width: 1200px) {
     body {
