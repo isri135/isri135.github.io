@@ -9,9 +9,8 @@ body {
     font-size: xx-large;
 }
 
-#gamecontroller {
-    width: 100px;
-    filter: invert(1);
+#ttt-icon {
+    width: 120px;
 }
 
 .page {
@@ -36,6 +35,13 @@ body {
    margin: 0;
    width: 100%;
    height: 100%;
+}
+
+.ttt-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert(1);
 }
   
 iframe {
