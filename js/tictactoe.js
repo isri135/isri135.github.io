@@ -53,7 +53,7 @@ two.isTurn = false;
 //gameplay
 player1.isTurn = true;
 
-$('.grid').on('click', (e) => {
+window.document.getElementById('.grid').on('click', (e) => {
 if(player1.win !== true && player2.win !== true) {
 if(e.target.id === space1.id && space1.played === false) {
    if(player1.isTurn) {
