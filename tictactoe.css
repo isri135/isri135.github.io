@@ -1,113 +1,153 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --cell-size: 100px;
+  --mark-size: calc(var(--cell-size) * .9);
+}
+
 body {
-    background-color: white;
-  }
-  
-  .grid {
-    background-color: rgba(0,0,0,.2);
-    margin: 50px auto;
-    vertical-align: center;
-    width: 400px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 2px;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 17px 50px;
-  }
-  
-  .space {
-    background-color: white;
-    transition: background-color .5s;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .space:hover {
-    background-color: rgba(0,0,0,0);
-    transition: background-color .5s;
-    cursor: pointer;
-  }
-  
-  .x, .o {
-   font-family: 'arial';
-   font-size: 70px;
-   position: absolute;
-  }
-  
-  .x {
-    color: tomato;
-  }
-  
-  .o {
-    color: #33DBFF;
-  }
-  
-  .header {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    color: tomato;
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .reset {
-    font-size: 20px;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    color: tomato;
-    background-color: white;
-    border: 1px solid tomato;
-    padding: 5px;
-    transition: border, color, .5s;
-  }
-  
-  .reset:hover {
-    cursor: pointer;
-    color: #33DBFF;
-    border: 1px solid #33DBFF;
-    transition: border, color, .5s;
-  }
-  
-  .reset:focus {
-    outline: none;
-  }
-  
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  
-  .p1, .p2 {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-  }
-  
-  .p1 {
-    color: tomato;
-    margin-left: 20px;
-  }
-  
-  .p2 {
-    color: #33DBFF;
-    margin-right: 20px;
-  }
-  
-  .h2 {
-    font-family: 'Bungee Inline', cursive;
-    font-size: 35px;
-    color: rgb(55, 0, 255);
-    text-align: center;
-    margin-top: 50px;
+  margin: 0;
+  background-color: black;
+}
 
-  }
+.prompt {
+  color: white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+}
+.board {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto)
+}
 
-  .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(8),
+.cell:nth-child(7) {
+  border-bottom: none;
+}
+
+.cell.x,
+.cell.circle {
+  cursor: not-allowed;
+}
+
+.cell.x::before,
+.cell.x::after,
+.cell.circle::before {
+  background-color: white;
+}
+
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+  background-color: lightgrey;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after {
+  content: '';
+  position: absolute;
+  width: calc(var(--mark-size) * .15);
+  height: var(--mark-size);
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before {
+  transform: rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after {
+  transform: rotate(-45deg);
+}
+
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cell.circle::before,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+  width: calc(var(--mark-size) * .7);
+  height: calc(var(--mark-size) * .7);
+  background-color: black;
+}
+
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+.winning-message button {
+  font-size: 3rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: .25em .5em;
+  cursor: pointer;
+}
+
+.winning-message button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.winning-message.show {
+  display: flex;
+}
