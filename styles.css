@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -117,8 +118,7 @@ body {
     font-weight: bold;
 }
 
-.Projects {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+h4 {
+    text-align: center;
 }
+
