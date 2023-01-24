@@ -122,3 +122,21 @@ h4 {
     text-align: center;
 }
 
+.POTC {
+    text-align: center;
+    font-size: large;
+}
+
+.potcvid {
+    margin-top: 20px;
+}
+
+.CW {
+    margin-top: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.cwvid {
+    margin-top: 20px;
+}
