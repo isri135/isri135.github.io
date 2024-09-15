@@ -1,0 +1,30 @@
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212A31; /* Dark background */
+    color: white;
+    height: 60px; /* Adjust as needed */
+  }
+  
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+    }
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    }
+
+.link:hover {
+    color: #1e90ff; /* Link hover color */
+    }

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+.center-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Full viewport height to center vertically */
+  width: 100%; /* Full viewport width */
+  background-color: none; /* Optional background for the whole viewport */
+  
+}
+
+.card-grid {
+  background-color: #272640;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-size: 5rem;
+  display: flexbox;
+  justify-items: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
+  height: 75vh; /* Box height */
+  width: 65vw; /* Box width */
+  border-radius: 40px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    user-select: none;
+  }
+
+.introduction {
+  text-align: center;
+  color: #3b7c85;
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+  user-select: none;
+}
+
+.card-wrapper {
+    cursor: pointer;
+  }
+  
+
+  .no-underline {
+    text-decoration: none;
+    color: inherit;
+  }
+
+/* For tablets */
+  /* @media only screen and (max-width: 890px) {
+  
+  .introduction {
+    text-align: center;
+    color: #3b7c85;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+    user-select: none;
+  }
+  .card-titles {
+    color: #3b7c85;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+  }
+
+  
+} */
+
+
+  
+@media only screen and (max-width: 650px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    user-select: none;
+    
+  }
+
+  .card-grid {
+    background-color: #272640;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+  
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+
+    min-height: 100vh; 
+    width: 65vw;
+    padding: 25px; 
+    padding-top: 45px;
+    margin-top: 80px; 
+    
+    border-radius: 40px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
+    }
+}

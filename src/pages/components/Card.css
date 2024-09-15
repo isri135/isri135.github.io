@@ -1,0 +1,151 @@
+.card {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    width: 18rem;
+    height: 18rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    width: '18rem';
+    height: '18rem';
+    background-color: #212F45;
+    display: 'flex';
+    justify-content: 'center';
+    align-items: 'center';
+  }
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    color: #3b7c85;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+  
+
+
+@media (max-width: 900px) {
+    .card {
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex;
+        width: 16rem;
+        height: 16rem;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 10px;
+        width: '18rem';
+        height: '18rem';
+        background-color: #212F45;
+        display: 'flex';
+        justify-content: 'center';
+        align-items: 'center';
+      }
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-header {
+        color: #3b7c85;
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-size: 2rem;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 805px) {
+    .card {
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex;
+        width: 14rem;
+        height: 14rem;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 10px;
+        width: '12rem';
+        height: '12rem';
+        background-color: #212F45;
+        display: 'flex';
+        justify-content: 'center';
+        align-items: 'center';
+      }
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-header {
+        color: #3b7c85;
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-size: 1.75rem;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 707px) {
+    .card {
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: flex;
+        width: 12rem;
+        height: 12rem;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 10px;
+        width: '8rem';
+        height: '12rem';
+        background-color: #212F45;
+        display: 'flex';
+        justify-content: 'center';
+        align-items: 'center';
+      }
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-header {
+        color: #3b7c85;
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-size: 1.75rem;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
