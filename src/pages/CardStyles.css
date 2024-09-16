@@ -53,29 +53,6 @@
     color: inherit;
   }
 
-/* For tablets */
-  /* @media only screen and (max-width: 890px) {
-  
-  .introduction {
-    text-align: center;
-    color: #3b7c85;
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-size: 2rem;
-    font-style: normal;
-    user-select: none;
-  }
-  .card-titles {
-    color: #3b7c85;
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-size: 3rem;
-    font-style: normal;
-  }
-
-  
-} */
-
 
   
 @media only screen and (max-width: 650px) {
@@ -107,5 +84,42 @@
     
     border-radius: 40px; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    user-select: none;
+    
+  }
+
+  .card-grid {
+    background-color: #272640;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-size: 4rem;
+  
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+
+    min-height: 150vh; 
+    width: 65vw;
+    padding: 25px; 
+    padding-top: 50px;
+    margin-top: 450px; 
+    
+    border-radius: 40px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  
+    }
+
+    .introduction {
+      font-size: 2rem;
     }
 }
